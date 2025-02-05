@@ -27,4 +27,5 @@ phases:
   post_build:
     commands:
       - echo Both Build completed on `date` ${BUILD_ID}
+      - ls
 
