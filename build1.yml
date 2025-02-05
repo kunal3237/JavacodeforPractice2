@@ -1,0 +1,18 @@
+phases:
+
+  pre_build:
+    commands:
+      - git clone ${source}
+      - echo "THis is from Build1"
+  build:
+    commands:
+      - echo Build started on `date`
+      - mvn install
+      - echo "Building from build1"
+  post_build:
+    commands:
+      - echo Build1 completed on `date`
+artifacts:
+  files:
+    - build1/target/messageUtil-1.0.jar
+    
