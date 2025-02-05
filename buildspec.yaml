@@ -10,7 +10,7 @@ batch:
     #       BUILD_ID: build1
     #       source: "https://github.com/kunal3237/JavacodeforPractice1.git"
     #       target: kunalcodebuildtargets3/build1/
-    # - identifier: build2
+    - identifier: build2
       buildspec: build2.yml
       env:
         variables:
