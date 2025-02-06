@@ -1,0 +1,33 @@
+version: 0.2
+
+batch:
+  fast-fail: false
+  build-list:
+    - identifier: build1
+      buildspec: build2.yml
+      
+      env:
+        variables:
+          BUILD_ID: build1
+          source: "https://github.com/kunal3237/JavacodeforPractice3.git"
+          target: "kunalcodebuildtargets3/build2/"
+        compute-type: BUILD_LAMBDA_1GB
+        
+    - identifier: build2
+      
+      env:
+         variables:
+           BUILD_ID: build2
+           source: "https://github.com/kunal3237/JavacodeforPractice3.git"
+           target: "kunalcodebuildtargets3/build2/"
+    #dynamic:
+     # buildspec: 
+      #  - build2.yml
+    
+
+phases:
+  
+  post_build:
+    commands:
+      - echo Both Build completed on `date` ${BUILD_ID}
+      - ls
