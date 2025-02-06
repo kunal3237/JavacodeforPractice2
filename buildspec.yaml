@@ -3,16 +3,15 @@ version: 0.2
 batch:
   fast-fail: false
   build-list:
-    # - identifier: build1
-    #   buildspec: build1.yml
-    #   env:
-    #     variables:
-    #       BUILD_ID: build1
-    #       source: "https://github.com/kunal3237/JavacodeforPractice1.git"
-    #       target: kunalcodebuildtargets3/build1/
-     - identifier: build2
-       buildspec: build2.yml
-       env:
+    - identifier: build1
+      
+      env:
+        variables:
+          BUILD_ID: build1
+       
+    - identifier: build2
+      buildspec: build2.yml
+      env:
          variables:
            BUILD_ID: build2
            source: "https://github.com/kunal3237/JavacodeforPractice3.git"
