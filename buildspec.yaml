@@ -4,13 +4,14 @@ batch:
   fast-fail: false
   build-list:
     - identifier: build1
+      buildspec: build2.yml
       
       env:
         variables:
           BUILD_ID: build1
        
     - identifier: build2
-      buildspec: build2.yml
+      
       env:
          variables:
            BUILD_ID: build2
