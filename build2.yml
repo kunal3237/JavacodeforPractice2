@@ -13,6 +13,7 @@ phases:
     commands:
       - echo Build started on `date`
       - ls
+      - pwd
       - mvn install
       - echo "Building from build1"
   post_build:
