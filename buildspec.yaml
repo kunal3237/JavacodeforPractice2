@@ -16,7 +16,7 @@ batch:
         type: ARM_LAMBDA_CONTAINER
         image: aws/codebuild/amazonlinux-aarch64-lambda-standard:corretto21
       depend-on: 
-        - build1
+        - build2
     - identifier: build2
       
       env:
