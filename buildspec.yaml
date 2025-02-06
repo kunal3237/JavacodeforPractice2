@@ -23,9 +23,7 @@ batch:
     
 
 phases:
-  install:
-    runtime-versions:
-      java: corretto11
+  
   post_build:
     commands:
       - echo Both Build completed on `date` ${BUILD_ID}
