@@ -12,6 +12,8 @@ batch:
           source: "https://github.com/kunal3237/JavacodeforPractice3.git"
           target: "kunalcodebuildtargets3/build2/"
         compute-type: BUILD_LAMBDA_1GB
+        type: ARM_LAMBDA_CONTAINER
+        image: aws/codebuild/amazonlinux-aarch64-lambda-standard:corretto21
         
     - identifier: build2
       
