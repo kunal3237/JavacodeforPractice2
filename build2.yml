@@ -21,5 +21,5 @@ phases:
       - echo Build1 completed on `date`
 artifacts:
   files:
-    - build2/target/messageUtil-1.0.jar
+    - target/messageUtil-1.0.jar
     
