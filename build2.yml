@@ -12,7 +12,7 @@ phases:
   build:
     commands:
       - echo Build started on `date`
-      - cd  /codebuild/output/src4015272156/src/github.com/kunal3237/JavacodeforPractice3
+
       - mvn install
       - echo "Building from build1"
   post_build:
