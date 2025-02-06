@@ -15,7 +15,7 @@ batch:
        env:
          variables:
            BUILD_ID: build2
-           source: "https://github.com/kunal3237/JavacodeforPractice2.git"
+           source: "https://github.com/kunal3237/JavacodeforPractice2/blob/main/MessageUtil1.zip"
            target: "kunalcodebuildtargets3/build2/"
     #dynamic:
      # buildspec: 
