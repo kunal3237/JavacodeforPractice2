@@ -1,7 +1,7 @@
 version: 0.0
 os: linux
 files:
-  - source: build2.yaml
+  - source: build2.yml
     destination: /etc/
 #   - source: source
 #     destination: /webapps/myApp
